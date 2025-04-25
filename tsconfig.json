@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@Atoms": ["./src/components/atoms"],
+      "@Atoms/*": ["./src/components/atoms/*"],
+      "@Molecules": ["./src/components/molecules"],
+      "@Molecules/*": ["./src/components/molecules/*"],
+      "@Organisms": ["./src/components/organisms"],
+      "@Organisms/*": ["./src/components/organisms/*"],
+      "@Templates": ["./src/components/templates"],
+      "@Templates/*": ["./src/components/templates/*"],
+      "@Fonts": ["./public/assets/fonts"],
+      "@Fonts/*": ["./public/assets/fonts/*"],
+      "@Images": ["./public/assets/images/images"],
+      "@Images/*": ["./public/assets/images/images/*"],
+      "@Icons": ["./public/assets/images/icons"],
+      "@Icons/*": ["./public/assets/images/icons/*"],
+      "@Logos": ["./public/assets/images/logos"],
+      "@Logos/*": ["./public/assets/images/logos/*"],
+      "@Types": ["./src/types"],
+      "@Types/*": ["./src/types/*"],
+      "@API": ["./src/app/api"],
+      "@API/*": ["./src/app/api/*"],
+      "@Utils": ["./src/functions/utils"],
+      "@Utils/*": ["./src/functions/utils/*"],
+      "@Services": ["./src/services"],
+      "@Services/*": ["./src/services/*"],
+      "@Constants": ["./src/constants"],
+      "@Constants/*": ["./src/constants/*"],
+      "@Hooks": ["./src/hooks"],
+      "@Hooks/*": ["./src/hooks/*"],
+      "@Styles": ["./src/styles"],
+      "@Styles/*": ["./src/styles/*"],
+      "@Lib": ["./src/lib"],
+      "@Lib/*": ["./src/lib/*"],
+      "@Providers": ["./src/providers"],
+      "@Providers/*": ["./src/providers/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

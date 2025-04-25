@@ -4,8 +4,9 @@ import styled from "styled-components";
 
 export const AppContainer = styled.div`
   width: 100vw;
-  min-width: 1420px;
-  min-height: 100vh;
+  max-width: 420px;
+  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 `;
 

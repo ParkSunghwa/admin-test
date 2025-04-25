@@ -1,7 +1,3 @@
-import { Home } from "@Templates/Home/Home";
-
-const Page = () => {
-  return <Home />;
-};
-
-export default Page;
+export default function Home() {
+  return <div>test</div>;
+}

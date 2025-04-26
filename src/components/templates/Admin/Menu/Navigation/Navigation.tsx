@@ -1,20 +1,32 @@
 "use client";
 
 import { MainLayout } from "@Organisms/MainLayout/MainLayout";
-import { NavigationContainer, NavigationRight } from "./Navigation.styled";
+import { NavigationContainer, NavigationContent } from "./Navigation.styled";
 import { Index } from "@Organisms/Index/Index";
-import { List } from "@Organisms/List/List";
 import { MultipleButtonContainer } from "@Atoms/Button/Button.styled";
 import { Button } from "@Atoms/Button/Button";
 import { INDIGO, MAGENTA } from "@Styles/colors";
+import { TableContainer, TableHead, TableHeadTitle, TableRow } from "@Organisms/Table/Table.styled";
 
 export const NavigationTemplate = () => {
   return (
-    <MainLayout title="항목명">
+    <MainLayout title="메뉴관리">
       <NavigationContainer>
         <Index />
-        <NavigationRight>
-          <List />
+        <NavigationContent>
+          <TableContainer>
+            <TableHead>
+              <TableRow>
+                <TableHeadTitle></TableHeadTitle>
+                <TableHeadTitle>NO</TableHeadTitle>
+                <TableHeadTitle>메뉴명</TableHeadTitle>
+                <TableHeadTitle>TYPE</TableHeadTitle>
+                <TableHeadTitle>정렬</TableHeadTitle>
+                <TableHeadTitle>상태</TableHeadTitle>
+                <TableHeadTitle></TableHeadTitle>
+              </TableRow>
+            </TableHead>
+          </TableContainer>
           <MultipleButtonContainer>
             <Button
               backgroundColor={MAGENTA}
@@ -31,7 +43,7 @@ export const NavigationTemplate = () => {
               항목추가
             </Button>
           </MultipleButtonContainer>
-        </NavigationRight>
+        </NavigationContent>
       </NavigationContainer>
     </MainLayout>
   );

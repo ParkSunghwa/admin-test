@@ -9,7 +9,7 @@ export const NavigationContainer = styled(RowContainer)`
   gap: 32px;
 `;
 
-export const NavigationRight = styled(Container)`
+export const NavigationContent = styled(Container)`
   flex: 1;
   gap: 32px;
   align-items: start;

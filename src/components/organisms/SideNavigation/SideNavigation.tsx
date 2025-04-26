@@ -190,7 +190,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
             $isActive={activatedMenu === "inquiry"}
           >
             <Image
-              src={AppImage}
+              src={UserImage}
               alt="inquiry"
               width={28}
               height={28}

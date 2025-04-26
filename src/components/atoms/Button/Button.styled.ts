@@ -15,6 +15,7 @@ export const BaseButton = styled.button<{ $width?: string; $height?: string; $pa
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 
   color: ${({ $fontColor }) => getColor($fontColor)};
   font-size: ${({ $fontSize }) => $fontSize || "14px"};

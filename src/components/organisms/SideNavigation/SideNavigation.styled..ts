@@ -80,12 +80,13 @@ export const SideNavigationSubMenuList = styled(Container)<{ $isActive: boolean 
     $isActive
       ? css`
           max-height: 100px;
-          animation: ${showSubmenu} 0.5s ease-in;
+          // animation: ${showSubmenu} 0.5s ease-in;
         `
       : css`
           max-height: 0;
-          animation: ${hideSubMenu} 0.5s ease-out;
+          // animation: ${hideSubMenu} 0.5s ease-out;
         `}
+  transition:0.5s;
 `;
 
 export const SideNavigationSubMenu = styled(Container)`

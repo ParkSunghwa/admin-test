@@ -8,12 +8,14 @@ import { useCallback, useState } from "react";
 import { AppImage, UserImage } from "@Images";
 import { CaretDownIcon, CaretUpIcon } from "@Icons";
 import { WHITE } from "@Styles/colors";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 interface SideNavigationProps {}
 
 export const SideNavigation = ({}: SideNavigationProps) => {
   const router = useRouter();
+  const pathname = usePathname();
+
   const [activatedMenu, setActivatedMenu] = useState("");
 
   const toggleActivatedMenu = useCallback(
@@ -68,7 +70,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
             </SideNavigationMenuIconBox>
           </SideNavigationMenuTitle>
           <SideNavigationSubMenuList $isActive={activatedMenu === "menu"}>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/menu/navigation")}>
+            <SideNavigationSubMenu onClick={!pathname.includes("/menu/navigation") ? () => router.push("/admin/menu/navigation") : undefined}>
               <Text
                 color="white"
                 size="14px"
@@ -76,7 +78,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
                 메뉴관리
               </Text>
             </SideNavigationSubMenu>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/menu/footer")}>
+            <SideNavigationSubMenu onClick={!pathname.includes("/menu/footer") ? () => router.push("/admin/menu/footer") : undefined}>
               <Text
                 color="white"
                 size="14px"
@@ -121,7 +123,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
             </SideNavigationMenuIconBox>
           </SideNavigationMenuTitle>
           <SideNavigationSubMenuList $isActive={activatedMenu === "user"}>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/user/list")}>
+            <SideNavigationSubMenu onClick={!pathname.includes("/user/list") ? () => router.push("/admin/user/list") : undefined}>
               <Text
                 color="white"
                 size="14px"
@@ -166,7 +168,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
             </SideNavigationMenuIconBox>
           </SideNavigationMenuTitle>
           <SideNavigationSubMenuList $isActive={activatedMenu === "board"}>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/board/list")}>
+            <SideNavigationSubMenu onClick={!pathname.includes("/board/list") ? () => router.push("/admin/board/list") : undefined}>
               <Text
                 color="white"
                 size="14px"
@@ -174,7 +176,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
                 게시판관리
               </Text>
             </SideNavigationSubMenu>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/board/post")}>
+            <SideNavigationSubMenu onClick={!pathname.includes("/board/post") ? () => router.push("/admin/board/post") : undefined}>
               <Text
                 color="white"
                 size="14px"
@@ -219,7 +221,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
             </SideNavigationMenuIconBox>
           </SideNavigationMenuTitle>
           <SideNavigationSubMenuList $isActive={activatedMenu === "inquiry"}>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/inquiry/list")}>
+            <SideNavigationSubMenu onClick={!pathname.includes("/inquiry/list") ? () => router.push("/admin/inquiry/list") : undefined}>
               <Text
                 color="white"
                 size="14px"
@@ -264,7 +266,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
             </SideNavigationMenuIconBox>
           </SideNavigationMenuTitle>
           <SideNavigationSubMenuList $isActive={activatedMenu === "addition"}>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/addition/popup")}>
+            <SideNavigationSubMenu onClick={!pathname.includes("/addtion/popup") ? () => router.push("/admin/addition/popup") : undefined}>
               <Text
                 color="white"
                 size="14px"

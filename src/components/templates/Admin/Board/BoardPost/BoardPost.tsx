@@ -1,7 +1,7 @@
 "use client";
 
 import { MainLayout } from "@Organisms/MainLayout/MainLayout";
-import { NavigationContainer, NavigationContent } from "./Navigation.styled";
+import { BoardPostContainer, BoardPostContent } from "./BoardPost.styled";
 import { Index } from "@Organisms/Index/Index";
 import { MultipleButtonContainer } from "@Atoms/Button/Button.styled";
 import { Button } from "@Atoms/Button/Button";
@@ -13,25 +13,24 @@ import { CheckBoxValue } from "@Atoms/CheckBox/CheckBox";
 import { Text } from "@Atoms/Typography";
 import { TableBodyDatum, TableHeadTitle } from "@Organisms/Table/Table";
 
-export const NavigationTemplate = () => {
+export const BoardPostTemplate = () => {
   const [checkedIds, setCheckedIds] = useState<CheckBoxValue[]>([]);
   return (
     <MainLayout
-      title="메뉴관리"
+      title="게시물관리"
       subTitle="전체"
     >
-      <NavigationContainer>
+      <BoardPostContainer>
         <Index />
-        <NavigationContent>
+        <BoardPostContent>
           <TableContainer>
             <TableColGroup>
               <TableCol $width="0" />
               <TableCol $width="0" />
-              <TableCol $width="280px" />
-              <TableCol $width="100px" />
-              <TableCol $width="100px" />
-              <TableCol $width="100px" />
-              <TableCol $width="240px" />
+              <TableCol $width="0" />
+              <TableCol $width="200px" />
+              <TableCol $width="160px" />
+              <TableCol $width="160px" />
             </TableColGroup>
             <TableHead>
               <TableRow>
@@ -50,18 +49,15 @@ export const NavigationTemplate = () => {
                   <Text color="gray4">NO</Text>
                 </TableHeadTitle>
                 <TableHeadTitle>
-                  <Text color="gray4">메뉴명</Text>
+                  <Text color="gray4">언어</Text>
                 </TableHeadTitle>
                 <TableHeadTitle>
-                  <Text color="gray4">TYPE</Text>
+                  <Text color="gray4">제목</Text>
                 </TableHeadTitle>
                 <TableHeadTitle>
-                  <Text color="gray4">정렬</Text>
+                  <Text color="gray4">작성일</Text>
                 </TableHeadTitle>
-                <TableHeadTitle>
-                  <Text color="gray4">상태</Text>
-                </TableHeadTitle>
-                <TableHeadTitle></TableHeadTitle>
+                <TableHeadTitle />
               </TableRow>
             </TableHead>
             <TableBody>
@@ -79,22 +75,16 @@ export const NavigationTemplate = () => {
                   <Text>1</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Text>목차 1</Text>
+                  <Text>한국어</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Text>LINK</Text>
+                  <Text>제목1</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Text>1</Text>
+                  <Text>2024-12-20</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button>보임</Button>
-                </TableBodyDatum>
-                <TableBodyDatum>
-                  <MultipleButtonContainer>
-                    <Button backgroundColor={MAGENTA}>바로가기</Button>
-                    <Button backgroundColor={INDIGO}>수정하기</Button>
-                  </MultipleButtonContainer>
+                  <Button backgroundColor={INDIGO}>수정하기</Button>
                 </TableBodyDatum>
               </TableRow>
               <TableRow>
@@ -111,22 +101,16 @@ export const NavigationTemplate = () => {
                   <Text>2</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Text>목차 2</Text>
+                  <Text>ENGLISH</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Text>LINK</Text>
+                  <Text>title1</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Text>2</Text>
+                  <Text>2024-12-20</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button>보임</Button>
-                </TableBodyDatum>
-                <TableBodyDatum>
-                  <MultipleButtonContainer>
-                    <Button backgroundColor={MAGENTA}>바로가기</Button>
-                    <Button backgroundColor={INDIGO}>수정하기</Button>
-                  </MultipleButtonContainer>
+                  <Button backgroundColor={INDIGO}>수정하기</Button>
                 </TableBodyDatum>
               </TableRow>
             </TableBody>
@@ -135,8 +119,8 @@ export const NavigationTemplate = () => {
             <Button backgroundColor={GRAY5}>선택삭제</Button>
             <Button backgroundColor={MAGENTA}>메뉴등록</Button>
           </MultipleButtonContainer>
-        </NavigationContent>
-      </NavigationContainer>
+        </BoardPostContent>
+      </BoardPostContainer>
     </MainLayout>
   );
 };

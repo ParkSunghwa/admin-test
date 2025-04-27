@@ -19,8 +19,17 @@ export const MainLayoutChildren = styled(Container)<{ $backgroundColor: string }
   flex: 1;
 `;
 
+export const MainLayoutSubTitleContainer = styled(RowContainer)`
+  width: fit-content;
+  padding-bottom: 16px;
+  align-self: end;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+`;
+
 export const MainLayoutTitleContainer = styled(Container)`
+  width: fit-content;
   padding-bottom: 32px;
-  width: !00%;
-  align-items: start;
+  align-self: start;
 `;

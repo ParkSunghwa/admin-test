@@ -4,13 +4,13 @@ import { Box } from "@Atoms/Box";
 import { Container } from "@Atoms/Container";
 import { RowContainer } from "@Atoms/RowContainer";
 import { GRAY2 } from "@Styles/colors";
-import { ABSOLUTE_COVER, INDIGO_BACKGROUND } from "@Styles/themes";
+import { ABSOLUTE_COVER, GRAY5_BACKGROUND, INDIGO_BACKGROUND } from "@Styles/themes";
 import styled, { css, keyframes } from "styled-components";
 
 export const SideNavigationContainer = styled(Container)`
   width: 250px;
   min-height: 100vh;
-  ${INDIGO_BACKGROUND}
+  ${GRAY5_BACKGROUND}
 `;
 
 export const SideNavigationTitle = styled(Container)`

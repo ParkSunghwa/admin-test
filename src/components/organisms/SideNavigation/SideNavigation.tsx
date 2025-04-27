@@ -166,7 +166,7 @@ export const SideNavigation = ({}: SideNavigationProps) => {
             </SideNavigationMenuIconBox>
           </SideNavigationMenuTitle>
           <SideNavigationSubMenuList $isActive={activatedMenu === "board"}>
-            <SideNavigationSubMenu onClick={() => router.push("/admin/board")}>
+            <SideNavigationSubMenu onClick={() => router.push("/admin/board/list")}>
               <Text
                 color="white"
                 size="14px"

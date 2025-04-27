@@ -1,7 +1,7 @@
-import { NavigationTemplate } from "@Templates/Admin/Menu/Navigation/Navigation";
+import { FooterTemplate } from "@Templates/Admin/Menu/Footer/Footer";
 
 const Page = () => {
-  return <NavigationTemplate />;
+  return <FooterTemplate />;
 };
 
 export default Page;

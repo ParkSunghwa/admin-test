@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { GRAY1, GRAY2, GRAY3, INDIGO, MAGENTA, WHITE } from "./colors";
+import { GRAY1, GRAY2, GRAY3, GRAY4, GRAY5, INDIGO, MAGENTA, WHITE } from "./colors";
 
 export const INDIGO_BACKGROUND = css`
   background-color: ${INDIGO};
@@ -19,6 +19,14 @@ export const GRAY2_BACKGROUND = css`
 
 export const GRAY3_BACKGROUND = css`
   background-color: ${GRAY3};
+`;
+
+export const GRAY4_BACKGROUND = css`
+  background-color: ${GRAY4};
+`;
+
+export const GRAY5_BACKGROUND = css`
+  background-color: ${GRAY5};
 `;
 
 export const WHITE_BACKGROUND = css`

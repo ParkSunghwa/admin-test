@@ -17,14 +17,14 @@ export const BaseButton = styled.button<{ $width?: string; $height?: string; $pa
   align-items: center;
   border-radius: 50px;
 
-  color: ${({ $fontColor }) => getColor($fontColor)};
+  color: ${({ $fontColor }) => getColor($fontColor || "white")};
   font-size: ${({ $fontSize }) => $fontSize || "14px"};
   font-weight: ${({ $fontWeight }) => $fontWeight || "normal"};
   width: ${({ $width }) => $width || "fit-content"};
   min-width: fit-content;
   height: ${({ $height }) => $height || "auto"};
   min-height: fit-content;
-  padding: ${({ $padding }) => $padding || "8px 32px"};
+  padding: ${({ $padding }) => $padding || "8px 24px"};
   background-color: ${({ $backgroundColor }) => $backgroundColor || INDIGO};
 
   position: relative;

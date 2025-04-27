@@ -1,7 +1,7 @@
-import { NavigationTemplate } from "@Templates/Admin/Menu/Navigation/Navigation";
+import { PopupTemplate } from "@Templates/Admin/Addition/Popup/Popup";
 
 const Page = () => {
-  return <NavigationTemplate />;
+  return <PopupTemplate />;
 };
 
 export default Page;

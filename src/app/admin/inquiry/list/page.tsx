@@ -1,7 +1,7 @@
-import { NavigationTemplate } from "@Templates/Admin/Menu/Navigation/Navigation";
+import { InquiryListTemplate } from "@Templates/Admin/Inquiry/InquiryList/InquiryList";
 
 const Page = () => {
-  return <NavigationTemplate />;
+  return <InquiryListTemplate />;
 };
 
 export default Page;

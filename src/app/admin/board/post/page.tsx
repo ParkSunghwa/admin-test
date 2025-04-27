@@ -1,7 +1,7 @@
-import { NavigationTemplate } from "@Templates/Admin/Menu/Navigation/Navigation";
+import { BoardPostTemplate } from "@Templates/Admin/Board/BoardPost/BoardPost";
 
 const Page = () => {
-  return <NavigationTemplate />;
+  return <BoardPostTemplate />;
 };
 
 export default Page;

@@ -1,7 +1,7 @@
-import { NavigationTemplate } from "@Templates/Admin/Menu/Navigation/Navigation";
+import { UserListTemplate } from "@Templates/Admin/User/UserList/UserList";
 
 const Page = () => {
-  return <NavigationTemplate />;
+  return <UserListTemplate />;
 };
 
 export default Page;

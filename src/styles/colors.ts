@@ -4,10 +4,11 @@ export const GRAY1 = "#f1f1f6";
 export const GRAY2 = "#d8d8d9";
 export const GRAY3 = "#a4a3b1";
 export const GRAY4 = "#666666";
+export const GRAY5 = "#222021";
 export const WHITE = "#ffffff";
 export const BLACK = "#000000";
 
-const ColorArray = ["indigo", "magenta", "gray1", "gray2", "gray3", "gray4", "white", "black"] as const;
+const ColorArray = ["indigo", "magenta", "gray1", "gray2", "gray3", "gray4", "gray5", "white", "black"] as const;
 
 export type Color = (typeof ColorArray)[number];
 
@@ -25,6 +26,8 @@ export const getColor = (color?: Color) => {
       return GRAY3;
     case "gray4":
       return GRAY4;
+    case "gray5":
+      return GRAY5;
     case "black":
     default:
       return BLACK;

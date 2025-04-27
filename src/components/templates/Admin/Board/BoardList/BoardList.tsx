@@ -83,7 +83,7 @@ export const BoardListTemplate = () => {
                   <Button>보임</Button>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button>수정하기</Button>
+                  <Button backgroundColor={MAGENTA}>수정하기</Button>
                 </TableBodyDatum>
               </TableRow>
               <TableRow>
@@ -109,7 +109,7 @@ export const BoardListTemplate = () => {
                   <Button>보임</Button>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button>수정하기</Button>
+                  <Button backgroundColor={MAGENTA}>수정하기</Button>
                 </TableBodyDatum>
               </TableRow>
             </TableBody>

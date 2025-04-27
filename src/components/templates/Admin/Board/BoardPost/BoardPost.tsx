@@ -84,7 +84,7 @@ export const BoardPostTemplate = () => {
                   <Text>2024-12-20</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button backgroundColor={INDIGO}>수정하기</Button>
+                  <Button backgroundColor={MAGENTA}>수정하기</Button>
                 </TableBodyDatum>
               </TableRow>
               <TableRow>
@@ -110,7 +110,7 @@ export const BoardPostTemplate = () => {
                   <Text>2024-12-20</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button backgroundColor={INDIGO}>수정하기</Button>
+                  <Button backgroundColor={MAGENTA}>수정하기</Button>
                 </TableBodyDatum>
               </TableRow>
             </TableBody>

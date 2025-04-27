@@ -77,8 +77,8 @@ export const PopupTemplate = () => {
                 </TableBodyDatum>
                 <TableBodyDatum>
                   <MultipleButtonContainer>
-                    <Button backgroundColor={MAGENTA}>미리보기</Button>
-                    <Button backgroundColor={INDIGO}>수정하기</Button>
+                    <Button backgroundColor={GRAY5}>미리보기</Button>
+                    <Button backgroundColor={MAGENTA}>수정하기</Button>
                   </MultipleButtonContainer>
                 </TableBodyDatum>
               </TableRow>
@@ -103,8 +103,8 @@ export const PopupTemplate = () => {
                 </TableBodyDatum>
                 <TableBodyDatum>
                   <MultipleButtonContainer>
-                    <Button backgroundColor={MAGENTA}>미리보기</Button>
-                    <Button backgroundColor={INDIGO}>수정하기</Button>
+                    <Button backgroundColor={GRAY5}>미리보기</Button>
+                    <Button backgroundColor={MAGENTA}>수정하기</Button>
                   </MultipleButtonContainer>
                 </TableBodyDatum>
               </TableRow>

@@ -92,8 +92,8 @@ export const FooterTemplate = () => {
                 </TableBodyDatum>
                 <TableBodyDatum>
                   <MultipleButtonContainer>
-                    <Button backgroundColor={MAGENTA}>바로가기</Button>
-                    <Button backgroundColor={INDIGO}>수정하기</Button>
+                    <Button backgroundColor={GRAY5}>바로가기</Button>
+                    <Button backgroundColor={MAGENTA}>수정하기</Button>
                   </MultipleButtonContainer>
                 </TableBodyDatum>
               </TableRow>
@@ -124,8 +124,8 @@ export const FooterTemplate = () => {
                 </TableBodyDatum>
                 <TableBodyDatum>
                   <MultipleButtonContainer>
-                    <Button backgroundColor={MAGENTA}>바로가기</Button>
-                    <Button backgroundColor={INDIGO}>수정하기</Button>
+                    <Button backgroundColor={GRAY5}>바로가기</Button>
+                    <Button backgroundColor={MAGENTA}>수정하기</Button>
                   </MultipleButtonContainer>
                 </TableBodyDatum>
               </TableRow>

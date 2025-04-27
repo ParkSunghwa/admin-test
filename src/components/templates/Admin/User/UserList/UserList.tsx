@@ -97,7 +97,7 @@ export const UserListTemplate = () => {
                   <Text>2024-12-20</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button>수정</Button>
+                  <Button backgroundColor={MAGENTA}>수정</Button>
                 </TableBodyDatum>
               </TableRow>
               <TableRow>
@@ -129,7 +129,7 @@ export const UserListTemplate = () => {
                   <Text>2025-03-01</Text>
                 </TableBodyDatum>
                 <TableBodyDatum>
-                  <Button>수정</Button>
+                  <Button backgroundColor={MAGENTA}>수정</Button>
                 </TableBodyDatum>
               </TableRow>
             </TableBody>
